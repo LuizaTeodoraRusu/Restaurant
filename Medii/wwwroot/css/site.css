@@ -1,0 +1,113 @@
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: white;
+    background-image: url('home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: purple;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.nav-item a:hover {
+    color: purple;
+    text-decoration: underline;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    /*color: #343a40;*/
+}
+
+.navbar-toggler-icon {
+    background-color: #343a40;
+}
+
+main {
+    padding-top: 20px;
+}
+
+
+.footer {
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse {
+        justify-content: space-between;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .navbar-toggler {
+        margin-bottom: 10px;
+    }
+}
+
+.btn {
+    background-color: purple;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+    .btn:hover {
+        background-color: #5a025a;
+        color: white;
+        border-radius: 10px;
+    }
+
+table {
+    background: #00000070;
+    border: none;
+}
+
+tr {
+    border-bottom: 1px solid #ffffff2b;
+}
+
+th, td {
+    border: none;
+    color: #fff;
+}

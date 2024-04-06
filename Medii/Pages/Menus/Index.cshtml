@@ -1,0 +1,49 @@
+﻿@page
+@model Medii.Pages.Menus.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<h1>Meniuri</h1>
+
+<p>
+    <a asp-page="Create">Adauga meniu</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Menu[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Menu[0].Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Menu[0].Details)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Menu) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Details)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.MenuId">Editeaza</a> |
+                <a asp-page="./Details" asp-route-id="@item.MenuId">Detalii</a> |
+                <a asp-page="./Delete" asp-route-id="@item.MenuId">Sterge</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
